@@ -1,8 +1,10 @@
-package devandroid.pauloa.applistavip;
+package devandroid.pauloa.applistavip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import devandroid.pauloa.applistavip.R;
 
 public class MainActivity extends AppCompatActivity {
 
