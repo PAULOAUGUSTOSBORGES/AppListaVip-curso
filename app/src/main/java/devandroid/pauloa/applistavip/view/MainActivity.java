@@ -3,6 +3,7 @@ package devandroid.pauloa.applistavip.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.pauloa.applistavip.R;
 import devandroid.pauloa.applistavip.model.Pessoa;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setCursoDesejado("farmacia");
         outraPessoa.setTelefoneContato("62999676874");
 
+        Log.i("POOAndroid",pessoa.toString());
+        Log.i("POOAndroid",outraPessoa.toString());
 
     }
 }

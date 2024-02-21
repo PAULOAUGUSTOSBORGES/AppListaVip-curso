@@ -44,7 +44,7 @@ public class Pessoa {
     }
 
     @Override
-    public String toString() {
+    public String toString() {  //para escrever os dados do objeto
         return "Pessoa{" +
                 "primeiroNome='" + primeiroNome + '\'' +
                 ", sobreNome='" + sobreNome + '\'' +
