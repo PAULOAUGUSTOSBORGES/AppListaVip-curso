@@ -20,18 +20,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.042" />
 
-
     <EditText android:id="@+id/txt_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/Txt_Nome"
+        android:hint="@string/Txt_Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Txt_titulo" />
-
 
     <EditText android:id="@+id/Txt_Sobrenome"
         android:layout_width="match_parent"
@@ -39,11 +37,10 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/Txt_Sobrenome"
+        android:hint="@string/Txt_Sobrenome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nome" />
-
 
     <EditText android:id="@+id/Txt_curso"
         android:layout_width="match_parent"
@@ -51,7 +48,7 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/Txt_Cursoname"
+        android:hint="@string/Txt_Cursoname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Txt_Sobrenome" />
@@ -63,11 +60,10 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/Txt_TelefoneContato"
+        android:hint="@string/Txt_TelefoneContato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Txt_curso" />
-
 
     <Button android:id="@+id/button_limpar"
         android:layout_width="wrap_content"
@@ -80,13 +76,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Txt_telefone" />
 
-    <Button android:id="@+id/button_nome"
+    <Button android:id="@+id/button_salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:layout_marginBottom="52dp"
         android:background="@color/azulclaro"
-        android:text="@string/Txt_Nome"
+        android:text="@string/Txt_Salvar"
         app:layout_constraintBottom_toTopOf="@+id/button_finalizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_limpar"
