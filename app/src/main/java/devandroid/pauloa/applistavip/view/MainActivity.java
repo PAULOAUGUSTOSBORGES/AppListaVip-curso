@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import devandroid.pauloa.applistavip.R;
 import devandroid.pauloa.applistavip.controller.PessoaController;
+import devandroid.pauloa.applistavip.dataBase.listaDB;
 import devandroid.pauloa.applistavip.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,11 +28,14 @@ public class MainActivity extends AppCompatActivity {
     Button button_limpar;
     Button button_salvar;
     Button button_finalizar;
+    String db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        listaDB db = new listaDB(MainActivity.this);//instanciando o banco de dados
 
         preferences = getSharedPreferences(NOME_PREFERENCES, 0);
         SharedPreferences.Editor listaVip = preferences.edit();
